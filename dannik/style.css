@@ -1,0 +1,238 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #121212;
+    --bg-card: #1e1e1e;
+    --accent: #ff4500; /* Orange Red for appetite */
+    --text-main: #ffffff;
+    --text-muted: #b0b0b0;
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--accent);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 14px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.schedule {
+    font-size: 20px;
+    color: var(--accent);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #e03e00;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--accent);
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.menu-category {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.menu-category.highlight {
+    border: 1px solid var(--accent);
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.2);
+}
+
+.menu-category h3 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-category h3 i {
+    color: var(--accent);
+}
+
+.category-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.menu-item {
+    margin-bottom: 25px;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 15px;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.item-header h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.price {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.item-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.badge {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
+
+.footer-content h3 {
+    font-family: var(--font-heading);
+    color: var(--accent);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.socials {
+    margin: 20px 0;
+}
+
+.socials a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: var(--accent);
+}
+
+.copyright {
+    font-size: 12px;
+    color: #555;
+}
